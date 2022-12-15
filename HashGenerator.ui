@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>391</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hash Generator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="BackgroundBehind_2">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>15</y>
+      <width>661</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,150);
+border: 1px solid rgba(255,255, 255,160);
+
+border-radius:5px;
+</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNoPredictiveText</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>15</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="help_btn">
+       <property name="minimumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>JetBrains Mono</family>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(5,195,221);
+color: rgb(0, 0, 0);
+border-radius:8px;</string>
+       </property>
+       <property name="text">
+        <string>H</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonMinimize">
+       <property name="minimumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(0, 255, 0);
+border-radius:8px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonMaximiz">
+       <property name="minimumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 226, 0);
+border-radius:8px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonExit">
+       <property name="minimumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>18</width>
+         <height>18</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 97, 6);
+border-radius:8px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="back">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>691</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>PVS/BackG.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="yourtext">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>84</y>
+      <width>451</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,150);
+color: #eeeeee;
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#ffff00, stop:1 #ffa733);
+padding-top: 7;
+padding-left: 10;
+padding-right: 10;
+border-radius:5px;
+</string>
+    </property>
+    <property name="plainText">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pasttext">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>84</y>
+      <width>196</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,150);
+color: #ffd31a;
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#ffff00, stop:1 #ffa733);
+padding-left: 10;
+padding-right: 10;
+border-radius:4px;
+</string>
+    </property>
+    <property name="text">
+     <string>Paste Text</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="selectfile">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>135</y>
+      <width>196</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,150);
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#ffff00, stop:1 #ffa733);
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#ffff00, stop:1 #ffa733);
+padding-left: 10;
+padding-right: 10;
+border-radius:4px;
+</string>
+    </property>
+    <property name="text">
+     <string>Select File</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="yourhash">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>209</y>
+      <width>451</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,150);
+color: #eeeeee;
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #5488ff,stop:1 #a5fecb);
+padding-top: 7;
+padding-left: 10;
+padding-right: 10;
+border-radius:5px;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>209</y>
+      <width>194</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Select Hash Algorithms</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,100);
+color : #82cbe1;
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #5488ff,stop:1 #a5fecb);
+padding-left: 10;
+border-radius:4;
+
+
+
+</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="duplicatesEnabled">
+     <bool>false</bool>
+    </property>
+    <item>
+     <property name="text">
+      <string>Hash Algorithm</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>md4</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>md5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sm3</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mdc2</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>sha1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>blake2b</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>blake2s</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>whirlpool</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ripemd160</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>shake128</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="copyhash">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>260</y>
+      <width>196</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,150);
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #5488ff,stop:1 #a5fecb);
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #5488ff,stop:1 #a5fecb);
+
+padding-left: 10;
+padding-right: 10;
+border-radius:4px;
+</string>
+    </property>
+    <property name="text">
+     <string>Copy Hash</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="generatehash">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>330</y>
+      <width>196</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,150);
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#FDFC47, stop:1 #24FE41);
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#FDFC47, stop:1 #24FE41);
+padding-left: 10;
+padding-right: 10;
+border-radius:4px;
+</string>
+    </property>
+    <property name="text">
+     <string>Generate Hash</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbltext">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>60</y>
+      <width>451</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(200, 200, 200,255);
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#ffff00, stop:1 #ffa733);</string>
+    </property>
+    <property name="text">
+     <string>Your Text</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>330</y>
+      <width>451</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar
+{
+background: rgba(10,10, 10,150);
+border-radius :5px;
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#FDFC47, stop:1 #24FE41);
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#FDFC47, stop:1 #24FE41);
+}
+QProgressBar::chunk 
+{
+
+border-radius :5px;
+}      </string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>true</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+    <property name="textDirection">
+     <enum>QProgressBar::TopToBottom</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BackgroundBehind_3">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>60</y>
+      <width>451</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,255);
+
+</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNoPredictiveText</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="BackgroundBehind_4">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>185</y>
+      <width>451</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="toolTipDuration">
+     <number>0</number>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(10,10, 10,255);
+
+</string>
+    </property>
+    <property name="inputMethodHints">
+     <set>Qt::ImhNoPredictiveText</set>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblhash">
+    <property name="geometry">
+     <rect>
+      <x>15</x>
+      <y>185</y>
+      <width>451</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(200, 200, 200,255);
+border: 1px solid white;
+border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #5488ff,stop:1 #a5fecb);</string>
+    </property>
+    <property name="text">
+     <string>Your Hash</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="complete">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>334</y>
+      <width>421</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>JetBrains Mono</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: rgba(0,0, 0,0);
+color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0#FDFC47, stop:1 #24FE41);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>back</zorder>
+   <zorder>BackgroundBehind_2</zorder>
+   <zorder>yourhash</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>yourtext</zorder>
+   <zorder>pasttext</zorder>
+   <zorder>selectfile</zorder>
+   <zorder>comboBox</zorder>
+   <zorder>copyhash</zorder>
+   <zorder>generatehash</zorder>
+   <zorder>progressBar</zorder>
+   <zorder>BackgroundBehind_3</zorder>
+   <zorder>lbltext</zorder>
+   <zorder>BackgroundBehind_4</zorder>
+   <zorder>lblhash</zorder>
+   <zorder>complete</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButtonExit</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>657</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonMinimize</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>29</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>345</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
